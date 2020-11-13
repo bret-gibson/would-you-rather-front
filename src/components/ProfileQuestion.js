@@ -11,7 +11,7 @@ export default class ProfileQuestion extends Component {
   componentDidMount() {
     // fetch(`http://localhost:3000/questions/${this.props.question.id}`)
     fetch(
-      `https://ancient-cliffs-69900.herokuapp.com/questions/${this.props.question.id}`
+      `https://bg-would-you-rather-backend.herokuapp.com/questions/${this.props.question.id}`
     )
       .then((response) => response.json())
       .then((question) => {

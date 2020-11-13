@@ -17,7 +17,7 @@ export default class Comment extends Component {
 
   componentDidMount() {
     //  fetch("http://localhost:3000/users")
-    fetch("https://ancient-cliffs-69900.herokuapp.com/users")
+    fetch("https://bg-would-you-rather-backend.herokuapp.com/users")
       .then((response) => response.json())
       .then((users) => {
         const user = users.find(

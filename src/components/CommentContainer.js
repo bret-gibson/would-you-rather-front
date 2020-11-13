@@ -13,7 +13,7 @@ export default class CommentContainer extends Component {
 
   componentDidMount() {
     fetch(
-      `https://ancient-cliffs-69900.herokuapp.com/questions/${this.props.question.id}`
+      `https://bg-would-you-rather-backend.herokuapp.com/questions/${this.props.question.id}`
     )
       .then((response) => response.json())
       .then((question) => {
@@ -32,7 +32,7 @@ export default class CommentContainer extends Component {
       comment_text: comment,
     };
     // fetch("http://localhost:3000/comments", {
-    fetch("https://ancient-cliffs-69900.herokuapp.com/comments", {
+    fetch("https://bg-would-you-rather-backend.herokuapp.com/comments", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

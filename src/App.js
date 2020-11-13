@@ -18,14 +18,14 @@ class App extends Component {
 
   submitUser = (userObj) => {
     // fetch("http://localhost:3000/users")
-    fetch("https://ancient-cliffs-69900.herokuapp.com/users")
+    fetch("https://bg-would-you-rather-backend.herokuapp.com/users")
       .then((response) => response.json())
 
       .then((users) => {
         const user = users.find((user) => user.username === userObj.username);
         // fetch(`http://localhost:3000/users/${user.id}/login`)
         fetch(
-          `https://ancient-cliffs-69900.herokuapp.com/users/${user.id}/login`
+          `https://bg-would-you-rather-backend.herokuapp.com/${user.id}/login`
         )
           .then((response) => response.json())
           .then((userData) => {
@@ -36,7 +36,7 @@ class App extends Component {
 
   createUser = (userObj) => {
     // fetch("http://localhost:3000/users", {
-    fetch("https://ancient-cliffs-69900.herokuapp.com/users", {
+    fetch("https://bg-would-you-rather-backend.herokuapp.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

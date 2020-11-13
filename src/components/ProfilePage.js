@@ -18,7 +18,7 @@ export default class ProfilePage extends Component {
   componentDidMount() {
     // fetch(`http://localhost:3000/users/${this.props.userData.id}/login`)
     fetch(
-      `https://ancient-cliffs-69900.herokuapp.com/users/${this.props.userData.id}/login`
+      `https://bg-would-you-rather-backend.herokuapp.com/users/${this.props.userData.id}/login`
     )
       .then((response) => response.json())
       .then((data) => {

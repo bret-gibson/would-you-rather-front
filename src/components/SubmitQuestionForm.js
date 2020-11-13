@@ -34,7 +34,7 @@ export default class SubmitQuestionForm extends Component {
     };
     // fetch("http://localhost:3000/questions"
 
-    fetch("https://ancient-cliffs-69900.herokuapp.com/questions", {
+    fetch("https://bg-would-you-rather-backend.herokuapp.com/questions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
