@@ -25,7 +25,7 @@ class App extends Component {
         const user = users.find((user) => user.username === userObj.username);
         // fetch(`http://localhost:3000/users/${user.id}/login`)
         fetch(
-          `https://bg-would-you-rather-backend.herokuapp.com/${user.id}/login`
+          `https://bg-would-you-rather-backend.herokuapp.com/users/${user.id}/login`
         )
           .then((response) => response.json())
           .then((userData) => {
